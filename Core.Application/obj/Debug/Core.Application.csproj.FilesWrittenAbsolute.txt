@@ -1,0 +1,8 @@
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/bin/Debug/Newtonsoft.Json.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/bin/Debug/Core.Domain.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/bin/Debug/Core.Domain.dll.mdb
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/bin/Debug/Core.Application.dll.mdb
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/bin/Debug/Core.Application.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/obj/Debug/Core.Application.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Core.Application/obj/Debug/Core.Application.dll.mdb

@@ -1,0 +1,5 @@
+/Users/nwestbrook/Documents/Development/OST-xDriven/Infrastructure.IoC/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/nwestbrook/Documents/Development/OST-xDriven/Infrastructure.IoC/bin/Debug/Infrastructure.IoC.dll.mdb
+/Users/nwestbrook/Documents/Development/OST-xDriven/Infrastructure.IoC/bin/Debug/Infrastructure.IoC.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Infrastructure.IoC/obj/Debug/Infrastructure.IoC.dll
+/Users/nwestbrook/Documents/Development/OST-xDriven/Infrastructure.IoC/obj/Debug/Infrastructure.IoC.dll.mdb

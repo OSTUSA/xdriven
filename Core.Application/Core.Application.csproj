@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95F986CD-8924-4090-A864-F462153E4385}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Core.Application</RootNamespace>
+    <AssemblyName>Core.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Dependencies\Json50r6\Bin\Net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Services\Implementation\ConfigService.cs" />
+    <Compile Include="Services\Implementation\LoggingService.cs" />
+    <Compile Include="Services\Implementation\WebRequestService.cs" />
+    <Compile Include="Services\IWebRequestService.cs" />
+    <Compile Include="Models\WebRequestServiceResponse\WebRequestServiceResponse.cs" />
+    <Compile Include="Models\AppEventArgs\NetworkErrorEventArgs.cs" />
+    <Compile Include="Broadcasters\Implementation\NetworkEventBroadcaster.cs" />
+    <Compile Include="Broadcasters\INetworkEventBroadcaster.cs" />
+    <Compile Include="Services\ILoggingService.cs" />
+    <Compile Include="Services\IConfigService.cs" />
+    <Compile Include="Injection\Injector.cs" />
+    <Compile Include="InterfaceRegistrar.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Broadcasters\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Implementation\" />
+    <Folder Include="Broadcasters\Implementation\" />
+    <Folder Include="Models\" />
+    <Folder Include="Injection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj">
+      <Project>{0725A68D-A717-4AC0-ADD4-C41844A3D526}</Project>
+      <Name>Core.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
