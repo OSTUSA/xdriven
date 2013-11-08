@@ -10,14 +10,15 @@ enterprise-level applications, but also can be applied to smaller projects. It m
 manageable. It also gives us the ability to swap out and re-use layers with little effort.
 
 ### Cross-platform Patterns
-**Core.Application.Presenters**  
-Keeps all non-UI related logic (business rules, validation, action logic, etc...) in the Core layer so it's re-usable in all presentation layers.
+**Presenters**  
+Keeps all non-UI related code (business rules, validation, action logic, etc...) in the Core layer so it's re-usable in all presentation layers.
 
-**Core.Application.Context**  
-Persists the application context / settings using the data layer (SQLite in this case), making it available for use in all presentation layers.
+**Persisted Context**  
+Persist the application context / settings using the data layer (SQLite in this case), making it available for use in all presentation layers. 
+We hydrate a singleton that holds the context data, and use a service to save / load.
 
-**Core.Application.Injection**  
-Uses a small singleton pattern to inject interface implementations (...until there's a good Xamarin port for Ninject ;).
+**Home-grown Injection**  
+A singleton pattern to inject interface implementations (...until there's a good Xamarin port for Ninject ;).
 
 ### Archetecture Overview
 **Core**
@@ -49,8 +50,12 @@ Everything iOS specific. Anything beyond creation and placement of UI elements s
 
 
 ## Items on the todo list:
-* Create demo iOS presentation layer that shows use of cross-platform code
+* Create demo iOS presentation layer that shows use of cross-platform code  
+	- Add notification scheduler base  
+	- Add reachability base  
+	- Add controller base  
+	- Add presentation base  
+	- Add validation broadcaster
 * Create demo Android presentation layer that shows use of cross-platform code
-* Add notification scheduler base to iOS presentation layer
-* Add reachability base to iOS presentation layer
 * ...a bunch of other stuff... :)
+
