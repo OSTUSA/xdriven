@@ -14,7 +14,7 @@ This type of archetecture also allows for reuse in other applications needing th
 * Infrastructure.DependencyResolution : ServiceContainer allows for injection of interfaces (like Ninject)
 
 ### Archetecture Overview
-*Core*
+**Core**
 * *Application* - 
 * *Domain* - 
 
@@ -37,5 +37,5 @@ This type of archetecture also allows for reuse in other applications needing th
 * Create demo Android presentation layer that shows use of cross-platform code
 * Add notification scheduler base to iOS presentation layer
 * Add reachability base to iOS presentation layer
-* Clean up / repurpose WebRequestService.cs code
 * ...a bunch of other stuff... :)
+* Test
