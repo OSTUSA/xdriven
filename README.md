@@ -10,9 +10,14 @@ enterprise-level applications, but also can be applied to smaller projects. It m
 manageable. It also gives us the ability to swap out and re-use layers with little effort.
 
 ### Cross-platform Patterns
-* **Core.Application.Presenters** - Keeps all non-UI related logic in Core (business rules, validation, action logic, etc...).
-* **Core.Application.Context** - Persists the application context using the data layer so it can be used in all presentation layers.
-* **Core.Application.Injection** - Uses a singleton and lock to inject interface implementations (like Ninject)
+**Core.Application.Presenters**
+Keeps all non-UI related logic in Core (business rules, validation, action logic, etc...).
+
+**Core.Application.Context**
+Persists the application context using the data layer so it can be used in all presentation layers.
+
+**Core.Application.Injection**
+Uses a singleton and lock to inject interface implementations (like Ninject)
 
 ### Archetecture Overview
 **Core**
