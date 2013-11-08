@@ -1,0 +1,13 @@
+
+# Bin and Obj Directories#
+##########################
+bin Bin
+obj Obj
+
+# Other Solution Files #
+########################
+*.userprefs
+
+# Other Misc Files #
+####################
+.DS_Store
