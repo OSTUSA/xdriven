@@ -15,28 +15,16 @@ This type of archetecture also allows for reuse in other applications needing th
 
 ### Archetecture Overview
 *Core*
-* Context - 
-* Presenters - 
-* Services - 
-* Utilities - 
-
-*Domain*
-* *Interfaces* - 
-* *Models* - 
+* *Application* - 
+* *Domain* - 
 
 *Infrastructure*
-* *Data* - 
-> * Test
-* > Test 2
-* *DependencyResulution* - 
-* *Interfaces* - 
+* *IoC* - 
+* *SQLite* - 
 
 *Presentation*
 * iOS
 * Android
-
-*Services*
-* *Interfaces*
 
 *Solution Items*
 * README.md
