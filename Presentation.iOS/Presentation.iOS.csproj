@@ -11,6 +11,7 @@
     <RootNamespace>Presentation.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>PresentationiOS</AssemblyName>
+    <newfilesearch>OnLoad</newfilesearch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -99,7 +100,6 @@
     <Folder Include="Themes\Default\" />
     <Folder Include="Images\" />
     <Folder Include="Linked\Core.Application\Injection\" />
-    <Folder Include="Modules\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -166,13 +166,13 @@
     <Compile Include="Themes\Default\Colors.cs" />
     <Compile Include="Themes\Default\Fonts.cs" />
     <Compile Include="Themes\Default\Theme.cs" />
-    <Compile Include="..\Core.Application\CoreApplicationModule.cs">
-      <Link>Linked\Core.Application\CoreApplicationModule.cs</Link>
-    </Compile>
     <Compile Include="..\Core.Application\Injection\Injector.cs">
       <Link>Linked\Core.Application\Injection\Injector.cs</Link>
     </Compile>
     <Compile Include="InterfaceRegistrar.cs" />
+    <Compile Include="..\Core.Application\InterfaceRegistrar.cs">
+      <Link>Linked\Core.Application\InterfaceRegistrar.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
