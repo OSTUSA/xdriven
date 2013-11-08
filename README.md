@@ -10,8 +10,7 @@ enterprise-level applications, but also can be applied to smaller projects. It m
 manageable. It also gives us the ability to swap out and re-use layers with little effort.
 
 ### Cross-platform Patterns
-**Core.Application.Presenters**
-
+**Core.Application.Presenters**</br>
 Keeps all non-UI related logic in Core (business rules, validation, action logic, etc...).
 
 **Core.Application.Context**
