@@ -15,18 +15,18 @@ This type of archetecture also allows for reuse in other applications needing th
 
 ### Archetecture Overview
 **Core**
-* *Application* - 
-* *Domain* - 
+* **Application** - 
+* **Domain** - 
 
-*Infrastructure*
-* *IoC* - 
-* *SQLite* - 
+**Infrastructure**
+* **IoC** - 
+* **SQLite** - 
 
-*Presentation*
-* iOS
-* Android
+**Presentation**
+* **iOS**
+* **Android**
 
-*Solution Items*
+**Solution Items**
 * README.md
 * LICENSE
 * .gitignore
@@ -38,4 +38,3 @@ This type of archetecture also allows for reuse in other applications needing th
 * Add notification scheduler base to iOS presentation layer
 * Add reachability base to iOS presentation layer
 * ...a bunch of other stuff... :)
-* Test
