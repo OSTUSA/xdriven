@@ -1,12 +1,15 @@
 
 # Bin and Obj Directories#
 ##########################
-bin Bin
-obj Obj
+bin/
+Bin/
+obj/
+Obj/
 
 # Other Solution Files #
 ########################
 *.userprefs
+*.user
 
 # Other Misc Files #
 ####################

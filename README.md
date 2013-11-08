@@ -15,12 +15,15 @@ This type of archetecture also allows for reuse in other applications needing th
 
 ### Archetecture Overview
 **Core**
-* **Application** - 
-* **Domain** - 
+
+* **Application** - Core contains the meat and potatoes of the application, including cross-platform stuff (like application context, presenters, 
+broadcasters / events, and services). The one and only dependency this project has is the Domain layer.
+* **Domain** - Domain namespace containing a sensible entity base as well as a generic repository interface. This layer has NO dependencies.
 
 **Infrastructure**
-* **IoC** - 
-* **SQLite** - 
+* **IoC** - This is where dependency resolution is contained. It currently contains one namespace, SQLite, that handles resolving 
+SQLite repositories. See  for more information.
+* **SQLite** - This contains the [SQLiteNET library](http://docs.xamarin.com/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/ "SQLiteNET"). 
 
 **Presentation**
 * **iOS**
