@@ -20,7 +20,7 @@ We hydrate a singleton that holds the context data, and use a service to save / 
 **Home-grown Injection**  
 A singleton pattern to inject interface implementations (...until there's a good Xamarin port for Ninject ;).
 
-### Archetecture Overview
+### Solution Structure
 **Core**
 
 * **Application**  
@@ -32,16 +32,17 @@ Domain namespace containing a sensible entity base as well as a generic reposito
 
 **Infrastructure**
 * **IoC**  
-This is where dependency resolution is contained. It currently contains one namespace, SQLite, that handles resolving 
+This is where dependency resolution resides. It currently contains one namespace, SQLite, that handles resolving 
 SQLite repositories.
 * **SQLite**  
 This contains the [SQLiteNET library](http://docs.xamarin.com/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/ "SQLiteNET"). 
+The one repository included implements the generic 'IRepository' interface and covers most use cases.
 
 **Presentation**
 * **iOS**  
-Everything iOS specific. Anything beyond creation and placement of UI elements should fall back to a corresponding presentation class in Core.Application.
+Everything iOS specific. Anything beyond creation and placement of UI elements should fall back to a corresponding Presenter in Core.Application.
 * **Android**  
-Everything iOS specific. Anything beyond creation and placement of UI elements should fall back to a corresponding presentation class in Core.Application.
+Everything Android specific. Anything beyond creation and placement of UI elements should fall back to a corresponding Presenter in Core.Application.
 
 **Solution Items**
 * README.md
