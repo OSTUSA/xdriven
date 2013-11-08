@@ -10,20 +10,21 @@ enterprise-level applications, but also can be applied to smaller projects. It m
 manageable. It also gives us the ability to swap out and re-use layers with little effort.
 
 ### Cross-platform Patterns
-* Core.Presenters : Keeps all non-UI related logic in Core (business rules, validation, actions, etc...)
-* Core.Context : Persists the application context using the data layer so it can be used in all presentation layers.
-* Infrastructure.DependencyResolution : ServiceContainer allows for injection of interfaces (like Ninject)
+* **Core.Application.Presenters** - Keeps all non-UI related logic in Core (business rules, validation, action logic, etc...).
+* **Core.Application.Context** - Persists the application context using the data layer so it can be used in all presentation layers.
+* **Core.Application.Injection** - Uses a singleton and lock to inject interface implementations (like Ninject)
 
 ### Archetecture Overview
 **Core**
 
 * **Application** - Core contains the meat and potatoes of the application, including cross-platform stuff (like application context, presenters, 
-broadcasters / events, and services). The one and only dependency this project has is the Domain layer.
-* **Domain** - Domain namespace containing a sensible entity base as well as a generic repository interface. This layer has NO dependencies.
+broadcasters / events, and services). This also contains the Injector singleton used to register and resolve interfaces. The one and only 
+dependency this project has is the Domain layer.
+* **Domain** - Domain namespace containing a sensible entity base as well as a generic repository interface. This layer has no dependencies.
 
 **Infrastructure**
 * **IoC** - This is where dependency resolution is contained. It currently contains one namespace, SQLite, that handles resolving 
-SQLite repositories. See  for more information.
+SQLite repositories.
 * **SQLite** - This contains the [SQLiteNET library](http://docs.xamarin.com/recipes/ios/data/sqlite/create_a_database_with_sqlitenet/ "SQLiteNET"). 
 
 **Presentation**
