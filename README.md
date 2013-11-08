@@ -3,13 +3,13 @@
 
 *This framework is under heavy construction currently...*
 
-### Onion Archetecture
+## Onion Archetecture
 This solution implements a flavor of the [onion architecture](http://www.develop.com/onionarchitecture "Onion Architecture") framework pattern. 
 The reasoning behind this is to allow separation of concern and modularity. This is especially useful when dealing with 
 enterprise-level applications, but also can be applied to smaller projects. It maximizes code reusability and keeps your classes small and 
 manageable. It also gives us the ability to swap out and re-use layers with little effort.
 
-### Cross-platform Patterns
+## Cross-platform Patterns
 **Presenters**  
 Keeps all non-UI related code (business rules, validation, action logic, etc...) in the Core layer so it's re-usable in all presentation layers.
 
@@ -20,9 +20,9 @@ We hydrate a singleton that holds the context data, and use a service to save / 
 **Home-grown Injection**  
 A singleton pattern to inject interface implementations (...until there's a good Xamarin port for Ninject ;).
 
-### Solution Structure
-**Core**
+## Solution Structure
 
+**Core**
 * **Application**  
 Core contains the meat and potatoes of the application, including cross-platform stuff (like application context, presenters, 
 broadcasters / events, and services). This also contains the Injector singleton used to register and resolve interfaces. The one and only 
