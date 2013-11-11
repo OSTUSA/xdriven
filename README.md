@@ -51,12 +51,14 @@ Everything Android specific. Anything beyond creation and placement of UI elemen
 
 
 ## Items on the todo list:
+* Drop in Google Analytics base
 * Create demo iOS presentation layer that shows use of cross-platform code  
 	- Add notification scheduler base  
 	- Add reachability base  
 	- Add controller base  
 	- Add presentation base  
 	- Add validation broadcaster
+	- Add Google Analytics usage
 * Create demo Android presentation layer that shows use of cross-platform code
 * ...a bunch of other stuff... :)
 
