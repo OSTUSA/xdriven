@@ -3,7 +3,7 @@
 
 *This framework is under heavy construction currently...*
 
-## Onion Archetecture
+## Onion Architecture
 This solution implements a flavor of the [onion architecture](http://www.develop.com/onionarchitecture "Onion Architecture") framework pattern. 
 The reasoning behind this is to allow separation of concern and modularity. This is especially useful when dealing with 
 enterprise-level applications, but also can be applied to smaller projects. It maximizes code reusability and keeps your classes small and 
